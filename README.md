@@ -2,7 +2,9 @@
 
 The application is a list of tickets with filters and sorting. The application uses backend [server](https://github.com/KosyanMedia/test-tasks/blob/master/aviasales_frontend/server.md) for getting random data.
 The [description](https://github.com/KosyanMedia/test-tasks/tree/master/aviasales_frontend) of test task.
-The application is written with *Vue 3, Typescript, and Vite*.
+
+The application is written with **Vue 3 (Composition API), Typescript, and Vite**.
+
 The template uses Vue 3 `<script setup>` [SFCs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup).
 
 ## Recommended extensions
