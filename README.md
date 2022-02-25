@@ -26,3 +26,21 @@ The template uses Vue 3 `<script setup>` [SFCs](https://v3.vuejs.org/api/sfc-scr
 ## Type Support For `.vue` Imports in TS
 
 Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases, this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's `.vue` type support plugin by running `Volar: Switch TS Plugin on/off` from VSCode command palette.
+
+## Deployment using Github Pages
+I have deployed the app to https://<USERNAME>.github.io/<REPO>/.
+So property "base" should be set to <REPO> in vite.config.ts file.
+
+Being in root folder of project we should execute following commands:
+
+```
+yarn build
+cd dist
+git init
+git checkout -b main
+git add -A
+git commit -m 'deploy'
+git remote add origin https://github.com/<USERNAME>/<REPO>.git
+git push origin main:gh-pages
+cd -
+```
