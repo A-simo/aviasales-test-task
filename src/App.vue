@@ -4,12 +4,12 @@
   import { Ticket, SearchIdResponse } from './types'
 
   const ticketsArray: Ref<Array<Ticket> | null> = ref(null)
-  const searchIdUrl: string = 'https://front-test.beta.aviasales.ru/search'
-  const getTicketsUrl: string = 'https://front-test.beta.aviasales.ru/tickets?searchId='
+  // const searchIdUrl: string = 'https://front-test.beta.aviasales.ru/search'
+  // const getTicketsUrl: string = 'https://front-test.beta.aviasales.ru/tickets?searchId='
 
   // In case the aviasales server returns 502 error.
-  // const searchIdUrl = "https://avs-backend.now.sh/search";
-  // const getTicketsUrl = "https://avs-backend.vercel.app/tickets?searchId=";
+  const searchIdUrl = "https://avs-backend.now.sh/search";
+  const getTicketsUrl = "https://avs-backend.vercel.app/tickets?searchId=";
 
   const sortCriteria: Ref<string> = ref('cheapest')
   const stopsFilter: Ref<Array<string>> = ref(['all'])
